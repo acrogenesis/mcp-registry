@@ -1,0 +1,22 @@
+name: docquery-remote
+type: remote
+dynamic:
+  tools: true
+meta:
+  category: database
+  tags:
+    - database
+    - spreadsheets
+    - pdf
+    - remote
+about:
+  title: DocQuery
+  description: Query a spreadsheet (Excel, CSV, Google Sheets, Airtable) and its PDFs together as linked relational tables, with source-page citations
+  icon: https://www.google.com/s2/favicons?domain=docquery.io&sz=64
+remote:
+  transport_type: streamable-http
+  url: https://docquery.io/api/v1/mcp
+oauth:
+  - provider: docquery-remote
+    secret: docquery-remote.personal_access_token
+    env: DOCQUERY_REMOTE_PERSONAL_ACCESS_TOKEN
